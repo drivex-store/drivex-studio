@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import {ShareIcon} from '@sanity/icons'
+import {ShareIcon} from '@sanity/icons/Share'
 
 export default defineType({
   name: 'socialLink',

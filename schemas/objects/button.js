@@ -1,4 +1,3 @@
-// objects/button.js — reused inside heroSection.ctas.buttons, pricing cards, etc.
 import { defineField, defineType } from 'sanity'
 
 export default defineType({

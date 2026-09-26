@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import {CheckmarkCircleIcon} from '@sanity/icons'
+import {CheckmarkCircleIcon} from '@sanity/icons/CheckmarkCircle'
 
 export default defineType({
   name: 'flyoutAvailability',

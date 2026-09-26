@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import {MenuIcon} from '@sanity/icons'
+import {MenuIcon} from '@sanity/icons/Menu'
 
 export default defineType({
   name: 'navigation',

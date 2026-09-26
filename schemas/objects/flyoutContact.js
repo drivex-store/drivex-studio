@@ -1,5 +1,5 @@
 import {defineField, defineType} from 'sanity'
-import {EnvelopeIcon} from '@sanity/icons'
+import {EnvelopeIcon} from '@sanity/icons/Envelope'
 
 export default defineType({
   name: 'flyoutContact',
