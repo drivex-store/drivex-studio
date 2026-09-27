@@ -1,4 +1,5 @@
-import { defineType, defineField } from 'sanity'
+
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'buttonComponent',
@@ -7,19 +8,35 @@ export default defineType({
   fields: [
     defineField({
       name: 'button',
-      type: 'object',
-      fields: [
-        defineField({ name: 'link', type: 'link' }), 
-        defineField({ name: 'size', type: 'string', options: { list: ['sm', 'default', 'lg'] } }),
-        defineField({ name: 'theme', type: 'string', options: { list: ['light', 'dark', 'brand'] } }),
-        defineField({ name: 'variant', type: 'string', options: { list: ['button', 'link'] } })
-      ]
+      title: 'Button Settings',
+      type: 'button', 
     }),
-    defineField({ 
-      name: 'selfAlign', 
-      type: 'string', 
-      options: { list: ['default', 'top', 'bottom', 'center'] },
-      initialValue: 'default' 
+    defineField({
+      name: 'selfAlign',
+      title: 'Self Alignment',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Default', value: 'default' },
+          { title: 'Top', value: 'top' },
+          { title: 'Bottom', value: 'bottom' },
+          { title: 'Center', value: 'center' }
+        ],
+        layout: 'dropdown'
+      },
+      initialValue: 'default'
     })
-  ]
+  ],
+  preview: {
+    select: {
+      buttonText: 'button.link.customText',
+      align: 'selfAlign'
+    },
+    prepare({ buttonText, align }) {
+      return {
+        title: buttonText || 'Button',
+        subtitle: `Alignment: ${align || 'default'}`
+      }
+    }
+  }
 })
