@@ -85,10 +85,9 @@ export default defineType({
           type: 'array',
           of: [
             { type: 'heroSectionField' },
-            // ⬇ schema ရေးပြီးမှ uncomment ပါ
-            // { type: 'columnLayoutSectionField' },
-            // { type: 'gallerySectionField' },
-            // { type: 'mediaSectionField' },
+            { type: 'columnLayoutSectionField' },
+            { type: 'gallerySectionField' },
+            { type: 'mediaSectionField' },
           ],
         }),
       ],

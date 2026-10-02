@@ -1,5 +1,7 @@
 import { defineField, defineType } from 'sanity'
 
+const PADDING_OPTIONS = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
+
 const COMPONENTS = [
   { type: 'headlineComponent' },
   { type: 'textComponent' },
@@ -10,6 +12,7 @@ const COMPONENTS = [
   { type: 'sectionHeaderComponent' },
   { type: 'listComponent' },
   { type: 'dividerComponent' },
+  { type: 'cardsComponent' },
 ]
 
 export default defineType({
@@ -99,6 +102,20 @@ export default defineType({
           },
         },
       ],
+    }),
+    defineField({
+      name: 'paddingTop',
+      title: 'Padding Top',
+      type: 'string',
+      options: { list: PADDING_OPTIONS },
+      initialValue: 'xl',
+    }),
+    defineField({
+      name: 'paddingBottom',
+      title: 'Padding Bottom',
+      type: 'string',
+      options: { list: PADDING_OPTIONS },
+      initialValue: 'xl',
     }),
     defineField({
       name: 'theme',

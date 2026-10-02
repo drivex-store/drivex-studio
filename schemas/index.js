@@ -27,6 +27,7 @@ import imageComponent from './components/imageComponent'
 import listComponent from './components/listComponent'
 import sectionHeaderComponent from './components/sectionHeaderComponent'
 import textComponent from './components/textComponent'
+import cardsComponent from './components/cardsComponent'
 
 // ============================================
 // Objects
@@ -72,6 +73,12 @@ import tabsSectionField from './objects/tabsSectionField'
 import workSliderSection from './objects/workSliderSection'
 import workSliderSectionField from './objects/workSliderSectionField'
 
+import gallerySection from './objects/gallerySection'
+import gallerySectionField from './objects/gallerySectionField'
+import mediaSection from './objects/mediaSection'
+import mediaSectionField from './objects/mediaSectionField'
+import videoOptions from './objects/videoOptions'
+
 export const schemaTypes = [
   // Documents
   award,
@@ -99,6 +106,7 @@ export const schemaTypes = [
   listComponent,
   sectionHeaderComponent,
   textComponent,
+  cardsComponent,
 
   // Objects
   accordionSection,
@@ -141,4 +149,10 @@ export const schemaTypes = [
   
   workSliderSection,
   workSliderSectionField,
+
+  gallerySection,
+  gallerySectionField,
+  mediaSection,
+  mediaSectionField,
+  videoOptions,
 ]
