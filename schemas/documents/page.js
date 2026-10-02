@@ -32,6 +32,12 @@ export default defineType({
           of: [
             { type: 'heroSectionField' },
             { type: 'logoSectionField' },
+            { type: 'cardsSectionField' },
+            { type: 'animatedListSectionField' },
+            { type: 'featuredWorkSectionField' },
+            { type: 'indexedGridSectionField' },
+            { type: 'accordionSectionField' },
+            { type: 'columnLayoutSectionField' },
           ],
         }),
       ],
