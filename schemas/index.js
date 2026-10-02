@@ -69,6 +69,9 @@ import textSectionField from './objects/textSectionField'
 import tabsSection from './objects/tabsSection'
 import tabsSectionField from './objects/tabsSectionField'
 
+import workSliderSection from './objects/workSliderSection'
+import workSliderSectionField from './objects/workSliderSectionField'
+
 export const schemaTypes = [
   // Documents
   award,
@@ -132,7 +135,10 @@ export const schemaTypes = [
   trustedBy,
   
   textSection,
-  textSectionFied,
+  textSectionField,
   tabsSection,
   tabsSectionField,
+  
+  workSliderSection,
+  workSliderSectionField,
 ]
