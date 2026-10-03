@@ -1,4 +1,3 @@
-
 import { defineField, defineType } from 'sanity'
 
 const PADDING_OPTIONS = ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl']
@@ -92,7 +91,16 @@ export default defineType({
       title: 'Parallax Media',
       type: 'object',
       fields: [
-        defineField({ name: 'image', title: 'Image', type: 'image' }),
+        // Media discriminator (the frontend reads parallaxMedia.type). Always 'image' for now.
+        defineField({
+          name: 'type',
+          title: 'Media Type',
+          type: 'string',
+          options: { list: ['image'] },
+          initialValue: 'image',
+          hidden: true,
+        }),
+        defineField({ name: 'image', title: 'Image', type: 'image', options: { hotspot: true } }),
         defineField({ name: 'highResolution', title: 'High Resolution', type: 'boolean' }),
       ],
     }),

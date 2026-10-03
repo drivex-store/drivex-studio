@@ -51,16 +51,23 @@ export default defineType({
         layout: 'dropdown'
       },
       initialValue: 'auto'
+    }),
+    defineField({
+      name: 'caption',
+      title: 'Caption',
+      type: 'string',
+      description: 'Optional text shown under the image (e.g. a person\'s name).',
     })
   ],
   preview: {
     select: {
       media: 'image.image',
-      ratio: 'aspectRatio'
+      ratio: 'aspectRatio',
+      caption: 'caption'
     },
-    prepare({ media, ratio }) {
+    prepare({ media, ratio, caption }) {
       return {
-        title: 'Image Component',
+        title: caption || 'Image Component',
         subtitle: `Ratio: ${ratio || 'auto'}`,
         media: media
       }

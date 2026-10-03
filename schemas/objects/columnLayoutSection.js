@@ -80,6 +80,14 @@ export default defineType({
               initialValue: '16',
             }),
             defineField({
+              name: 'mobileOrder',
+              title: 'Mobile Order',
+              type: 'number',
+              description:
+                'Stacking order of this column on mobile (1 = first). Leave empty to keep the desktop order.',
+              validation: (Rule) => Rule.min(1).integer(),
+            }),
+            defineField({
               name: 'components',
               title: 'Components',
               type: 'array',

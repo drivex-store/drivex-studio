@@ -45,7 +45,6 @@ export default defineType({
             {type: 'caseStudy'},
             {type: 'landingPage'},
             {type: 'award'},
-            {type: 'contactSection'},
             {type: 'contactSectionDocument'},
           ],
         }),

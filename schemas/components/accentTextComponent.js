@@ -26,8 +26,8 @@ export default defineType({
       initialValue: 'foreground'
     }),
     defineField({
-      name: 'size',
-      title: 'Text Size',
+      name: 'style',
+      title: 'Text Style (size)',
       type: 'string',
       options: {
         list: [
@@ -44,12 +44,12 @@ export default defineType({
     select: {
       title: 'text',
       color: 'color',
-      size: 'size'
+      style: 'style'
     },
-    prepare({ title, color, size }) {
+    prepare({ title, color, style }) {
       return {
         title: title || 'Empty Accent Text',
-        subtitle: `Color: ${color || 'default'} | Size: ${size || 'default'}`
+        subtitle: `Color: ${color || 'default'} | Style: ${style || 'default'}`
       }
     }
   }

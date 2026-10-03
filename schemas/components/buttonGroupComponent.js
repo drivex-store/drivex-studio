@@ -1,4 +1,3 @@
-// schemas/objects/buttonGroupComponent.js
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
@@ -38,6 +37,21 @@ export default defineType({
           of: [{ type: 'button' }] 
         })
       ]
+    }),
+    defineField({
+      name: 'selfAlign',
+      title: 'Self Alignment',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Default', value: 'default' },
+          { title: 'Top', value: 'top' },
+          { title: 'Bottom', value: 'bottom' },
+          { title: 'Center', value: 'center' }
+        ],
+        layout: 'dropdown'
+      },
+      initialValue: 'default'
     })
   ],
   preview: {

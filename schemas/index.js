@@ -4,7 +4,6 @@
 import award from './documents/award'
 import caseStudy from './documents/caseStudy'
 import contactFormSubmission from './documents/contactFormSubmission'
-import contactSection from './documents/contactSection'
 import footer from './documents/footer'
 import navigation from './documents/navigation'
 import notFound from './documents/notFound'
@@ -40,6 +39,8 @@ import animatedListSectionField from './objects/animatedListSectionField'
 import button from './objects/button'
 import cardsSection from './objects/cardsSection'
 import cardsSectionField from './objects/cardsSectionField'
+import contactSection from './objects/contactSection'
+import contactSectionField from './objects/contactSectionField'
 import columnLayoutSection from './objects/columnLayoutSection'
 import columnLayoutSectionField from './objects/columnLayoutSectionField'
 import featuredWorkSection from './objects/featuredWorkSection'
@@ -89,7 +90,6 @@ export const schemaTypes = [
   award,
   caseStudy,
   contactFormSubmission,
-  contactSection,
   footer,
   navigation,
   notFound,
@@ -124,6 +124,8 @@ export const schemaTypes = [
   cardsSectionField,
   columnLayoutSection,
   columnLayoutSectionField,
+  contactSection,
+  contactSectionField,
   featuredWorkSection,
   featuredWorkSectionField,
   flyoutAvailability,
