@@ -49,6 +49,12 @@ export default defineType({
             {type: 'contactSectionDocument'},
           ],
         }),
+        defineField({
+          name: 'sectionTarget',
+          title: 'Section Target',
+          type: 'string',
+          description: 'Optional. Key of a section on the target page to scroll to.',
+        }),
       ],
     }),
     defineField({
@@ -75,9 +81,9 @@ export default defineType({
     }),
     defineField({
       name: 'modalId',
-      title: 'Modal',
-      type: 'reference',
-      to: [{type: 'promotionalPopup'}],
+      title: 'Modal ID',
+      type: 'string',
+      description: 'Identifier of the modal to open, e.g. "cal-booking"',
       hidden: ({parent}) => parent?.type !== 'modal',
     }),
     defineField({

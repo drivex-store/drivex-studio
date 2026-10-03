@@ -15,6 +15,7 @@ import promotionalPopup from './documents/promotionalPopup'
 import projectTag from './documents/projectTag' 
 import landingPage from './documents/landingPage' 
 import contactSectionDocument from './documents/contactSectionDocument' 
+import auditSubmission from './documents/auditSubmission' 
 // ============================================
 // Components (Modular UI Blocks)
 // ============================================
@@ -77,6 +78,10 @@ import gallerySection from './objects/gallerySection'
 import gallerySectionField from './objects/gallerySectionField'
 import mediaSection from './objects/mediaSection'
 import mediaSectionField from './objects/mediaSectionField'
+import pricingSection from './objects/pricingSection'
+import pricingSectionField from './objects/pricingSectionField'
+import tableSection from './objects/tableSection'
+import tableSectionField from './objects/tableSectionField'
 import videoOptions from './objects/videoOptions'
 
 export const schemaTypes = [
@@ -95,6 +100,7 @@ export const schemaTypes = [
   projectTag,
   landingPage,
   contactSectionDocument,
+  auditSubmission,
 
   // Components
   accentTextComponent,
@@ -154,5 +160,9 @@ export const schemaTypes = [
   gallerySectionField,
   mediaSection,
   mediaSectionField,
+  pricingSection,
+  pricingSectionField,
+  tableSection,
+  tableSectionField,
   videoOptions,
 ]
